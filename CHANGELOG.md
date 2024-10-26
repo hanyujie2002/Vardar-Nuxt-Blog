@@ -1,5 +1,30 @@
 # Changelog of Vardar
 
+## v3.0.0
+
+[compare changes](https://github.com/hanyujie2002/Vardar/compare/v2.19.17...v3.0.0)
+
+### 🚀 Enhancements
+
+- Implemented admin panel ([35c5b19](https://github.com/hanyujie2002/Vardar/commit/35c5b19))
+
+### 🏡 Chore
+
+- **deps-dev:** Bump nuxt-toc from 2.6.7 to 2.7.2 ([1b17881](https://github.com/hanyujie2002/Vardar/commit/1b17881))
+- **deps-dev:** Bump tailwindcss from 3.4.13 to 3.4.14 ([bd453c8](https://github.com/hanyujie2002/Vardar/commit/bd453c8))
+- **deps-dev:** Bump @iconify-json/material-symbols from 1.2.4 to 1.2.5 ([0e72ff0](https://github.com/hanyujie2002/Vardar/commit/0e72ff0))
+- **deps-dev:** Bump @nuxt/eslint from 0.5.7 to 0.6.0 ([0ed24dd](https://github.com/hanyujie2002/Vardar/commit/0ed24dd))
+- **deps-dev:** Bump eslint-plugin-vue from 9.29.0 to 9.29.1 ([81632dd](https://github.com/hanyujie2002/Vardar/commit/81632dd))
+- Linted codes ([9de3400](https://github.com/hanyujie2002/Vardar/commit/9de3400))
+
+### ✅ Tests
+
+- Updating blog content ([9d65de7](https://github.com/hanyujie2002/Vardar/commit/9d65de7))
+
+### ❤️ Contributors
+
+- Hanyujie2002 ([@hanyujie2002](http://github.com/hanyujie2002))
+
 ## v2.19.17
 
 [compare changes](https://github.com/hanyujie2002/Vardar/compare/v2.19.16...v2.19.17)
