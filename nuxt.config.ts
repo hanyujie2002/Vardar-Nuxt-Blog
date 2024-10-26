@@ -44,8 +44,14 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxtjs/mdc',
     'nuxt-easy-lightbox',
+    'nuxt-monaco-editor',
   ],
   mdc: {
+    remarkPlugins: {
+      // emoji: {
+      //   src: 'remark-emoji'
+      // }
+    },
     components: {
       map: {
         input: 'ProseInput',
