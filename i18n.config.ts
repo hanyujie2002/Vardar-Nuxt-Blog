@@ -14,7 +14,7 @@ export default defineI18nConfig(() => ({
       blog: '博客',
       tags: '标签',
       noResult: '未搜索到相关内容',
-      typeToSearch: '输入关键词进行搜索'
+      typeToSearch: '输入关键词进行搜索',
     },
     'zh-TW': {
       about: '關於',

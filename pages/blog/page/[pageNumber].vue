@@ -32,7 +32,7 @@
             <div
               v-for="tag in article.tags"
               :key="tag"
-              class="text-blue-400 hover:brightness-75 mr-2 dark:text-blue-600 dark:hover:brightness-125"
+              class="mr-2 text-blue-400 hover:brightness-75 dark:text-blue-600 dark:hover:brightness-125"
             >
               <NuxtLink :to="`/tags/${tag}`">#{{ tag }}</NuxtLink>
             </div>

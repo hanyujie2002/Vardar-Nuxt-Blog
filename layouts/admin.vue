@@ -33,12 +33,10 @@
       <nav
         class="sticky top-0 z-40 flex h-[--header-height] flex-auto text-black backdrop-blur-2xl dark:text-slate-200"
       >
-        <ul
-          class="mx-auto my-auto flex w-full max-w-screen-xl gap-4"
-        >
+        <ul class="mx-auto my-auto flex w-full max-w-screen-xl gap-4">
           <li class="list-item">
             <NuxtLink
-              class="flex flex-auto rounded px-4 py-2 md:ml-[10px] text-2xl font-extrabold transition-colors dark:text-slate-100"
+              class="flex flex-auto rounded px-4 py-2 text-2xl font-extrabold transition-colors md:ml-[10px] dark:text-slate-100"
               to="/admin"
               title="Home"
               aria-label="Home Page"
@@ -75,20 +73,40 @@
                 class="size-10 transition-colors hover:text-yellow-500 active:text-yellow-400 sm:size-12 dark:hover:text-yellow-100 dark:active:text-yellow-200"
               />
             </button>
-            <dialog ref="tokenDialogRef" class="absolute -translate-x-1/2 bg-white rounded">
+            <dialog
+              ref="tokenDialogRef"
+              class="absolute -translate-x-1/2 rounded bg-white"
+            >
               <div class="flex flex-col">
-              <h2 class="w-36 text-xl font-thin text-center">Set Your Token</h2>
-              <div class="mx-2 mt-1">
-                <textarea v-model="githubToken" autofocus placeholder="Input Your Github Token" class="w-64 resize-none px-2 py-1 border rounded" />
-              </div>
-              <div class="flex mx-2 my-1 justify-between">
-                <button @click="handleTokenSet" class="bg-green-200 px-3 rounded font-light hover:brightness-95 active:brightness-90">OK</button>
-                <button @click="hideTokenDialog" class="bg-red-200 px-3 rounded font-light hover:brightness-95 active:brightness-90">Cancel</button>
-              </div>
+                <h2 class="w-36 text-center text-xl font-thin">
+                  Set Your Token
+                </h2>
+                <div class="mx-2 mt-1">
+                  <textarea
+                    v-model="githubToken"
+                    autofocus
+                    placeholder="Input Your Github Token"
+                    class="w-64 resize-none rounded border px-2 py-1"
+                  />
+                </div>
+                <div class="mx-2 my-1 flex justify-between">
+                  <button
+                    class="rounded bg-green-200 px-3 font-light hover:brightness-95 active:brightness-90"
+                    @click="handleTokenSet"
+                  >
+                    OK
+                  </button>
+                  <button
+                    class="rounded bg-red-200 px-3 font-light hover:brightness-95 active:brightness-90"
+                    @click="hideTokenDialog"
+                  >
+                    Cancel
+                  </button>
+                </div>
               </div>
             </dialog>
           </li>
-          <li class="sm:max-xl:mr-2 my-auto list-item">
+          <li class="my-auto list-item sm:max-xl:mr-2">
             <ColorModeSwitch />
           </li>
           <li class="my-auto mr-2 sm:hidden">
@@ -148,21 +166,21 @@ savedTheme.value = savedTheme.value || '';
 const search = ref<string>('');
 
 const results = ref();
-const localePath = useLocalePath()
+const localePath = useLocalePath();
 
 const showTokenDialog = () => {
   tokenDialogRef.value?.show();
-}
+};
 
 const hideTokenDialog = () => {
-  tokenDialogRef.value?.close()
-}
+  tokenDialogRef.value?.close();
+};
 
 const handleTokenSet = () => {
   localStorage.setItem('github-token', githubToken.value);
-  githubToken.value = ''
+  githubToken.value = '';
   hideTokenDialog();
-}
+};
 
 const debouncedSearch = debounce(async (newSearch: string) => {
   const searchTimeout = setTimeout(() => {

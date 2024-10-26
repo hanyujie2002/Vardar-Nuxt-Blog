@@ -5,7 +5,7 @@
     >
       <NuxtLink
         :to="`/tags/${currentTag}`"
-        class="mb-8 sm:max-xl:ml-[10px] mt-4 px-4 font-serif text-5xl font-extralight tracking-wide animate-in fade-in slide-in-from-bottom dark:text-slate-200"
+        class="mb-8 mt-4 px-4 font-serif text-5xl font-extralight tracking-wide animate-in fade-in slide-in-from-bottom sm:max-xl:ml-[10px] dark:text-slate-200"
         >{{ currentTag }}</NuxtLink
       >
       <li v-for="article in articles" :key="article._path" data-aos="fade-in">
@@ -33,7 +33,7 @@
             <div
               v-for="tag in article.tags"
               :key="tag"
-              class="text-blue-400 hover:brightness-75 mr-2 dark:text-blue-600 dark:hover:brightness-125"
+              class="mr-2 text-blue-400 hover:brightness-75 dark:text-blue-600 dark:hover:brightness-125"
             >
               <NuxtLink :to="`/tags/${tag}`">#{{ tag }}</NuxtLink>
             </div>
