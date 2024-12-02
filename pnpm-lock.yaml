@@ -58,8 +58,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.1
       '@iconify-json/tabler':
-        specifier: ^1.2.2
-        version: 1.2.5
+        specifier: ^1.2.9
+        version: 1.2.9
       '@nuxt/content':
         specifier: ^2.13.2
         version: 2.13.2(ioredis@5.4.1)(magicast@0.3.5)(nuxt@3.13.2(@parcel/watcher@2.4.1)(@types/node@22.7.5)(eslint@9.12.0(jiti@2.3.3))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.24.0)(terser@5.34.1)(typescript@5.6.3)(vite@5.4.8(@types/node@22.7.5)(terser@5.34.1)))(rollup@4.24.0)(vue@3.5.12(typescript@5.6.3))
@@ -874,8 +874,8 @@ packages:
   '@iconify-json/svg-spinners@1.2.1':
     resolution: {integrity: sha512-QZNA4YzFD2zqdC6nIBJM6WlAGakUCjvMt92Ks1R4XFxkd76Ps3rdiauYWESDRZvNYURAByp2b9cwZarFula65g==}
 
-  '@iconify-json/tabler@1.2.5':
-    resolution: {integrity: sha512-BDDLgDCbJ2btwi6cPmBL04QyPyNmWy6H13ynUAX48xxpxqUuG+hT+yrqL+RCugFimrvuhcecbSfEKnFc0BW1Ng==}
+  '@iconify-json/tabler@1.2.9':
+    resolution: {integrity: sha512-Noow/mRnLx2IKM6Wey5ondTGhRA2jySA3Au36GD2phxuBscvJNPE+F14rxYJoC65QmxSyEpKeF2U00JpR5Qx1Q==}
 
   '@iconify/collections@1.0.470':
     resolution: {integrity: sha512-6N1f1iNMNWvM56pUhcv+0TSP6Apl2VRfejtZH8h9H8fMRiDsROWxeQeEBxI394QnVWrOyoK1XXnNyVbn6xlF6A==}
@@ -6272,7 +6272,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/tabler@1.2.5':
+  '@iconify-json/tabler@1.2.9':
     dependencies:
       '@iconify/types': 2.0.0
 
